@@ -16,6 +16,7 @@
 		7D2473972E83BD4D00888A4F /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2473962E83BD4D00888A4F /* HabitTrackerTests.swift */; };
 		7D2473A12E83BD4D00888A4F /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2473A02E83BD4D00888A4F /* HabitTrackerUITests.swift */; };
 		7D2473A32E83BD4D00888A4F /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2473A22E83BD4D00888A4F /* HabitTrackerUITestsLaunchTests.swift */; };
+		7D2473B02E83C4B300888A4F /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2473AF2E83C4B300888A4F /* HabitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7D24739C2E83BD4D00888A4F /* HabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2473A02E83BD4D00888A4F /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		7D2473A22E83BD4D00888A4F /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D2473AF2E83C4B300888A4F /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7D2473812E83BD4900888A4F /* SceneDelegate.swift */,
 				7D2473832E83BD4900888A4F /* ViewController.swift */,
 				7D2473852E83BD4900888A4F /* Main.storyboard */,
+				7D2473AF2E83C4B300888A4F /* HabitCell.swift */,
 				7D2473882E83BD4D00888A4F /* Assets.xcassets */,
 				7D24738A2E83BD4D00888A4F /* LaunchScreen.storyboard */,
 				7D24738D2E83BD4D00888A4F /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				7D2473842E83BD4900888A4F /* ViewController.swift in Sources */,
 				7D2473802E83BD4900888A4F /* AppDelegate.swift in Sources */,
+				7D2473B02E83C4B300888A4F /* HabitCell.swift in Sources */,
 				7D2473822E83BD4900888A4F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
