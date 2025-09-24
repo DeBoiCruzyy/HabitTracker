@@ -52,10 +52,14 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="dvm-4O-IvW" id="f5b-Oj-So5"/>
-                                            <outlet property="habitLabel" destination="oOU-Gy-lTe" id="BsW-Dw-r7Q"/>
+                                            <outlet property="habitLabel" destination="oOU-Gy-lTe" id="LT7-6g-MMT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hUN-8S-JWJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vvM-4A-XaV"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2WI-xs-Z5E">
                                 <rect key="frame" x="16" y="784" width="248" height="34"/>
@@ -68,6 +72,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="addHabit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4R-yn-3hi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Habit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M42-nu-pBR">
                                 <rect key="frame" x="16" y="750" width="145" height="26"/>
@@ -87,7 +94,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="table" destination="rAf-Oe-SGf" id="TS4-Ws-Gbg"/>
+                        <outlet property="habitTextField" destination="2WI-xs-Z5E" id="ikD-mR-v2O"/>
+                        <outlet property="tableView" destination="rAf-Oe-SGf" id="Pgr-tf-fjP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
