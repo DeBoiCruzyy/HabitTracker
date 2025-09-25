@@ -16,7 +16,9 @@ class ViewController: UIViewController, UITableViewDataSource {
     var habits: [(habit: String, date: String)] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        // may need to come back here
+        if let headerView = self.view.subviews.first(where: { $0.restorationIdentifier == "HeaderView"}){
+            tableView.tableHeaderView = headerView
+        }
     }
     
     @IBAction func addHabit(_ sender: UIButton) {
